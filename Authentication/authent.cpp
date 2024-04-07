@@ -10,6 +10,11 @@ bool UsernamePasswordAuthenticate ::authenticate(const string& username,const st
     
 }
 
+bool BiometricAuthenticate ::authenticate(const string& username,const string& password)
+{
+    return true;
+}
+
 Authenticator ::Authenticator(AuthenticationStrategy* auth):auth(auth){}
 
 bool Authenticator ::login(const string& username,const string& password)

@@ -14,6 +14,12 @@ public:
     bool authenticate(const string &username, const string &password);
 };
 
+class BiometricAuthenticate : public AuthenticationStrategy
+{
+public:
+    bool authenticate(const string &username, const string &password);
+};
+
 class Authenticator
 {
     private:
